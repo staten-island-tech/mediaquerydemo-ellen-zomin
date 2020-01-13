@@ -5,7 +5,16 @@ $colors: (
   primary-dark: #1f2833,
   black: #0b0c10
 );
+$desktop:110px
+$laptop:900px
+$tablet:600px
+
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
+
+@mixin desktop{
+  @media (min-widht: #{$desktop}){
+    @content, 
+  }}
